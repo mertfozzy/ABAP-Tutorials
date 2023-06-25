@@ -5,12 +5,15 @@
 *&---------------------------------------------------------------------*
 REPORT ZMERT_P004.
 
+TYPES : gtyp_name TYPE c LENGTH 30.
+
+
 * ** ZORUNLU ALANLAR ** : bunun icin OBLIGATORY kismini koda eklersin.
 
 PARAMETERS : gp_ad TYPE c LENGTH 15 OBLIGATORY,
       gp_soyad TYPE c LENGTH 15 OBLIGATORY.
 
-DATA : gv_tamIsım TYPE c LENGTH 30.
+DATA : gv_tamIsım TYPE gtyp_name.
 
 CONCATENATE gp_ad gp_soyad into gv_tamIsım SEPARATED BY ' '.
 
