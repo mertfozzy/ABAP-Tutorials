@@ -40,3 +40,5 @@ WRITE :/ '-------------------------'.
 DATA : gv_ornekString TYPE string.
 gv_ornekString = 'MERT 19 03 2000'.
 WRITE :/ 'gv_ornekString : ', gv_ornekString.
+
+WRITE :/ '-------------------------'.
